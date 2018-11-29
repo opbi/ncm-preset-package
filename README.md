@@ -11,9 +11,6 @@
   <a href="https://coveralls.io/github/opbi/ncm-preset-package?branch=master">
     <img alt="Coveralls" src="https://img.shields.io/coveralls/github/opbi/ncm-preset-package/master.svg">
   </a>
-  <a href="https://inch-ci.org/github/opbi/ncm-preset-package">
-    <img alt="Inline docs" src="https://inch-ci.org/github/opbi/ncm-preset-package.svg?branch=master">
-  </a>
   <a href="https://github.com/semantic-release/semantic-release">
     <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
   </a>
