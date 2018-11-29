@@ -2,8 +2,8 @@
 ---
 component:
   type: package
-  name: ncm-standard-package
-  description: the standard package config preset used by ncm
+  name: ncm-preset-package
+  description: the config preset for [package] used by ncm, maintained by OPBI to share best-practices
   keywords: standard, preset, ncm, config, template
   private: false
 package:

@@ -1,8 +1,8 @@
 {
-  "name": "@opbi/ncm-standard-package",
-  "description": "the standard package config preset used by ncm",
+  "name": "@opbi/ncm-preset-package",
+  "description": "the config preset for [package] used by ncm, maintained by OPBI to share best-practices",
   "keywords": "standard, preset, ncm, config, template",
-  "repository": "git@github.com:opbi/ncm-standard-package.git",
+  "repository": "git@github.com:opbi/ncm-preset-package.git",
   "author": "OPBI <engineering@opbi.org>",
   "license": "MIT",
   "publishConfig": {
