@@ -1,0 +1,8 @@
+---
+files:
+  included:
+    - src/*.js
+    - src/**/*.js
+  excluded:
+    - src/__tests__/*.js
+    - src/__tests__/**/*.js
