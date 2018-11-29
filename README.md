@@ -43,7 +43,7 @@
 
 #### Install
 ```shell
-yarn add @opbi/
+yarn add @opbi/ncm-preset-package
 ```
 
 ### License
