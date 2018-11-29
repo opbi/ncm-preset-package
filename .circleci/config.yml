@@ -44,8 +44,9 @@ workflows:
   test-and-release:
     jobs:
       - test:
-          branches:
-            ignore: gh-pages
+          filters:
+            branches:
+              ignore: gh-pages
       - release:
           requires:
             - test
