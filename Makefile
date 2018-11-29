@@ -33,6 +33,13 @@ test-watch:
 test-coverage:
 	@jest --coverage
 
+.PHONY: docs
+docs:
+	@documentation build src/** -f md -o docs/index.md
+
+docs-watch:
+	@documentation serve src/** --watch
+
 commit:
 	@commit
 

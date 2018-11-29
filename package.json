@@ -1,6 +1,6 @@
 {
   "name": "@opbi/ncm-preset-package",
-  "description": "the config preset for [package] used by ncm, maintained by OPBI to share best-practices",
+  "description": "the config preset for [package] used by ncm",
   "keywords": "standard, preset, ncm, config, template",
   "repository": "git@github.com:opbi/ncm-preset-package.git",
   "author": "OPBI <engineering@opbi.org>",
@@ -26,6 +26,7 @@
     "@commitlint/config-conventional": "^7.1.2",
     "@commitlint/prompt-cli": "^7.2.1",
     "babel-eslint": "^10.0.1",
+    "documentation": "^8.1.2",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",
