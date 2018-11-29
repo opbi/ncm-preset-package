@@ -1,0 +1,16 @@
+## created by @opbi/ncm
+---
+component:
+  type: package
+  name: ncm-standard-package
+  description: the standard package config preset used by ncm
+  keywords: standard, preset, ncm, config, template
+  private: false
+package:
+  environment: node
+  npmScope: opbi
+owner:
+  type: organisation
+  github: opbi
+  name: OPBI
+  email: engineering@opbi.org
