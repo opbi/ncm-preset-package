@@ -12,10 +12,12 @@ extends:
   - airbnb-base
   - plugin:jest/recommended
   - prettier
+  - standard-jsdoc
 plugins:
   - import
   - jest
   - prettier
+  - jsdoc
 rules:
   import/extensions: [warn, {js: never}]
   import/no-extraneous-dependencies: 'off'
