@@ -35,7 +35,7 @@ test-coverage:
 
 .PHONY: docs
 docs:
-	@documentation build src/** -f md -o docs/index.md
+	@documentation build src/** -f md -o docs/API.md
 
 docs-watch:
 	@documentation serve src/** --watch
