@@ -43,7 +43,9 @@ workflows:
   version: 2
   test-and-release:
     jobs:
-      - test
+      - test:
+          branches:
+            ignore: gh-pages
       - release:
           requires:
             - test
