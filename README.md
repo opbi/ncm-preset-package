@@ -1,9 +1,5 @@
-<p align="center">
-  <img alt="ncm-preset-package" src="https://raw.githubusercontent.com/opbi/logo/master/ncm-preset-package/ncm-preset-package.svg?sanitize=true" width="160">
-</p>
-
 <h3 align="center">ncm-preset-package</h3>
-<p align="center" style="margin-bottom: 2em;">the config preset for [package] used by ncm, maintained by OPBI to share best-practices</p>
+<p align="center" style="margin-bottom: 2em;">the config preset for [package] used by ncm</p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@opbi/ncm-preset-package">
@@ -38,13 +34,6 @@
 ---
 
 ### Purpose
-
-### How to Use
-
-#### Install
-```shell
-yarn add @opbi/ncm-preset-package
-```
 
 ### License
 [MIT](License)
