@@ -41,7 +41,7 @@ jobs:
       - run:
           name: Update Doc GitHub Page
           command: |
-            npx jsdoc2md src/** -g none > docs/API.md &&\
+            npx jsdoc2md src/** -g none > API.md &&\
             npx gitbook build &&\
             git config --global user.name 'CircleCI' &&\
             git config --global user.email 'circleci@users.noreply.github.com' &&\
