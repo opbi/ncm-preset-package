@@ -1,3 +1,5 @@
+set -e
+
 LAST_COMMIT=$(git rev-parse HEAD)
 LAST_DOCS_RELATED_COMMIT=$(git log -1 --format=format:%H \
   --full-diff -- docs -- .bookignore -- book.json -- README.md -- SUMMARY.md)
