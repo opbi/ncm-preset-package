@@ -1,5 +1,5 @@
 <h3 align="center">ncm-preset-package</h3>
-<p align="center" style="margin-bottom: 2em;">the config preset for [package] used by ncm</p>
+<p align="center" style="margin-bottom: 2em;">📦 [package] config standard and template used by [@opbi/ncm](https://github.com/opbi/ncm)</p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@opbi/ncm-preset-package">
