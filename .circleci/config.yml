@@ -46,31 +46,7 @@ jobs:
       - run:
           name: Update Doc GitHub Page
           command: |
-            LAST_COMMIT=$(git rev-parse HEAD)
-            DOCS_COMMIT=$(git log -1 --format=format:%H --full-diff docs)
-            README_COMMIT=$(git log -1 --format=format:%H --full-diff README.md)
-            SUMMARY_COMMIT=$(git log -1 --format=format:%H --full-diff SUMMARY.md)
-            BOOKJSON_COMMIT=$(git log -1 --format=format:%H --full-diff book.json)
-            BOOKIGNORE_COMMIT=$(git log -1 --format=format:%H --full-diff .bookignore)
-
-            func updateGithubPage() {
-              git config --global user.name 'CircleCI';
-              git config --global user.email 'circleci@users.noreply.github.com';
-              npx jsdoc2md src/** -g none > API.md;
-              npx gitbook build;
-              npx gh-pages -d _book -m 'Automated Github Page Update';
-            }
-
-            if [ $LAST_COMMIT = $DOCS_COMMIT ] \
-            || [ $LAST_COMMIT = $README_COMMIT ] \
-            || [ $LAST_COMMIT = $SUMMARY_COMMIT ] \
-            || [ $LAST_COMMIT = $BOOKJSON_COMMIT ] \
-            || [ $LAST_COMMIT = $BOOKIGNORE_COMMIT ] ;
-            then
-              updateGithubPage()
-            else
-              echo 'Nothing related to docs have been changed. Skip.'
-            fi;
+            .circleci/update-github-page.sh
 
 workflows:
   version: 2
