@@ -159,7 +159,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <p></p><h3 align="center" id="ncm-preset-package">ncm-preset-package</h3><p></p>
-<p align="center" style="margin-bottom: 2em;">&#x1F4E6; [package] config standard and template used by [@opbi/ncm](https://github.com/opbi/ncm)</p>
+<p align="center" style="margin-bottom: 2em;">&#x1F4E6; [package] config standard and template used by @opbi/ncm</p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@opbi/ncm-preset-package" target="_blank">
@@ -193,6 +193,19 @@
 
 <hr>
 <h3 id="purpose">Purpose</h3>
+<h4 id="model-of-package">Model of Package</h4>
+<p>This serves as the flagship and standard of how a package component should be developed, tested, built, published, documentated and shared. It is the mother and ultimate source of truth of how different tools and services are configured to model the process and standard of shipping a package.</p>
+<h4 id="lord-of-tooling">Lord of Tooling</h4>
+<p>Any idea and optimisation should go into this repo, getting tested and reviewed, and populated to all packages through <a href="https://github.com/opbi/ncm" target="_blank">ncm</a>. It also serves as a single source of place to test any new development tool using its pipeline, and any niche programming edge case that may break the build configuration should be included in the src code here to be tested with any future tooling update. There should be no business logics here, and anything else that can be estabilished as a standard should be prooved here.</p>
+<h3 id="current-standard">Current Standard</h3>
+<ul>
+<li>Initialisation: @opbi/ncm</li>
+<li>Development: yarn, babel, eslint, prettier, flow-typed, jsdoc, jest</li>
+<li>Commit: husky, commitlint</li>
+<li>Build &amp; Publish: semantic-release, CircleCI, Coveralls, Scrutiniser, Snyk, David, InchCI, Renovate</li>
+<li>Guide &amp; Docs: documentation.js, gitbook, gh-pages, .md</li>
+<li>Deprecation: (@opbi/ncm)</li>
+</ul>
 <h3 id="how-to-use">How to Use</h3>
 <h3 id="license">License</h3>
 <p><a href="License">MIT</a></p>
@@ -235,7 +248,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Purpose","level":"1.1","depth":1,"next":{"title":"API References","level":"1.2","depth":1,"path":"API.md","ref":"API.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/opbi/ncm-preset-package/tree/master"},"github":{"url":"https://github.com/opbi/ncm-preset-package/"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ncm-preset-package","gitbook":"3.2.2"},"file":{"path":"README.md","mtime":"2018-11-30T16:49:00.558Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-11-30T16:49:39.645Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Purpose","level":"1.1","depth":1,"next":{"title":"API References","level":"1.2","depth":1,"path":"API.md","ref":"API.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/opbi/ncm-preset-package/tree/master"},"github":{"url":"https://github.com/opbi/ncm-preset-package/"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ncm-preset-package","gitbook":"3.2.2"},"file":{"path":"README.md","mtime":"2018-11-30T17:15:39.827Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-11-30T17:16:10.974Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
