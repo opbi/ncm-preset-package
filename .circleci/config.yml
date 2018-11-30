@@ -38,6 +38,12 @@ jobs:
       - checkout
       - *restore-deps-cache
       - run: make install build release
+      - run:
+          name: Update Doc GitHub Page
+          command: |
+            npx jsdoc2md src/** -g none > docs/API.md &&\
+            npx gitbook build ./docs &&\
+            npx gh-pages -d docs/_book -m '[skip ci] doc page update'
 
 workflows:
   version: 2

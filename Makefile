@@ -9,7 +9,7 @@ install:
 	@yarn
 
 cleanup:
-	@rm -rf dist coverage node_modules  *.log
+	@rm -rf dist coverage docs/_book node_modules  *.log
 
 build:
 	@echo 'Building…'
@@ -33,12 +33,8 @@ test-watch:
 test-coverage:
 	@jest --coverage
 
-.PHONY: docs
-docs:
-	@documentation build src/** -f md -o docs/API.md
-
-docs-watch:
-	@documentation serve src/** --watch
+book:
+	@gitbook serve ./docs
 
 commit:
 	@commit

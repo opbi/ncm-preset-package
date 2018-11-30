@@ -3,7 +3,7 @@
 component:
   type: package
   name: ncm-preset-package
-  description: the config preset for [package] used by ncm, maintained by OPBI to share best-practices
+  description: the config preset for [package] used by ncm
   keywords: standard, preset, ncm, config, template
   private: false
 package:
