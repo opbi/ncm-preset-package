@@ -1,0 +1,13 @@
+# gitbook would first read .gitignore
+
+# src
+src/
+
+# dotfiles
+.*
+*.js
+*.json
+LICENSE
+Makefile
+yarn.lock
+TEMPLATE.md
