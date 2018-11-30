@@ -9,12 +9,16 @@ install:
 	@yarn
 
 cleanup:
-	@rm -rf dist coverage docs/_book node_modules  *.log
+	@rm -rf dist coverage _book node_modules  *.log
 
 build:
 	@echo 'Building…'
 	@rm -rf dist
 	@babel src -d dist --ignore '**/__tests__/*.js'
+
+flowtype:
+	@echo 'flowtype check...'
+	@flow check
 
 lint:
 	@echo 'linting…'
