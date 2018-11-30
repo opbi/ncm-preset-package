@@ -45,8 +45,7 @@ jobs:
           command: make install build release
       - run:
           name: Update Doc GitHub Page
-          command: |
-            .circleci/update-github-page.sh
+          command: sh .circleci/update-github-page.sh
 
 workflows:
   version: 2
