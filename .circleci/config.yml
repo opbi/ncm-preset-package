@@ -43,8 +43,8 @@ jobs:
           command: |
             npx jsdoc2md src/** -g none > docs/API.md &&\
             npx gitbook build ./docs &&\
-            git config --global user.email 'bot@gmail.com' &&\
-            git config --global user.name 'bot' &&\
+            git config --global user.name 'CircleCI' &&\
+            git config --global user.email 'circleci@users.noreply.github.com' &&\
             npx gh-pages -d docs/_book -m '[skip ci] doc page update'
 
 workflows:
