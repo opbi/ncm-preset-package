@@ -6,7 +6,7 @@
     <img alt="npm" src="https://img.shields.io/npm/v/@opbi/ncm-preset-package.svg">
   </a>
   <a href="https://circleci.com/gh/opbi/workflows/ncm-preset-package">
-    <img alt="Travis" src="https://img.shields.io/circleci/project/github/opbi/ncm-preset-package/master.svg">
+    <img alt="CI" src="https://img.shields.io/circleci/project/github/opbi/ncm-preset-package/master.svg">
   </a>
   <a href="https://coveralls.io/github/opbi/ncm-preset-package?branch=master">
     <img alt="Coveralls" src="https://img.shields.io/coveralls/github/opbi/ncm-preset-package/master.svg">
