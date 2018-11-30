@@ -1,13 +1,12 @@
 # gitbook would first read .gitignore
 
-# src
-src/
-
-# dotfiles
+# ignore everything
 .*
-*.js
-*.json
 *
+
+# only include
+!.circleci/
+!docs/
 !book.json
 !README.md
 !SUMMARY.md
