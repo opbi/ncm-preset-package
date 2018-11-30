@@ -56,7 +56,6 @@ workflows:
   version: 2
   test-and-release:
     jobs:
-      - install
       - test:
           filters:
             branches:
