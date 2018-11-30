@@ -41,10 +41,10 @@ jobs:
       - run:
           name: Update Doc GitHub Page
           command: |
-            npx jsdoc2md src/** -g none > API.md &&\
-            npx gitbook build &&\
             git config --global user.name 'CircleCI' &&\
             git config --global user.email 'circleci@users.noreply.github.com' &&\
+            npx jsdoc2md src/** -g none > API.md &&\
+            npx gitbook build &&\
             npx gh-pages -d _book -m '[skip ci] Automated Github Page Update'
 
 workflows:

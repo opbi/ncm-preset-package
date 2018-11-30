@@ -34,7 +34,8 @@ test-coverage:
 	@jest --coverage
 
 book:
-	@gitbook serve ./docs
+	@rm -rf _book
+	@gitbook serve
 
 commit:
 	@commit
