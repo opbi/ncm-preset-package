@@ -1,3 +1,5 @@
+#!/bin/sh
+
 set -e
 
 LAST_COMMIT=$(git rev-parse HEAD)
