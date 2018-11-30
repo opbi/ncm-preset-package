@@ -35,5 +35,7 @@
 
 ### Purpose
 
+### How to Use
+
 ### License
 [MIT](License)
