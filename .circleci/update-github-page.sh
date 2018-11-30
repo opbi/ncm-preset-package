@@ -9,7 +9,7 @@ LAST_DOCS_RELATED_COMMIT=$(git log -1 --format=format:%H \
 if [ $LAST_COMMIT = $LAST_DOCS_RELATED_COMMIT ] ; then
   git config --global user.name 'CircleCI';
   git config --global user.email 'circleci@users.noreply.github.com';
-  npx jsdoc2md src/** -g none > API.md;
+  npx documentation build src/** -f md --markdown-toc false > API.md;
   npx gitbook build;
   npx gh-pages -d _book -m 'Automated Github Page Update [skip ci]';
 else
