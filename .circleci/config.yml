@@ -9,7 +9,12 @@ references:
     restore_cache:
       keys:
         - yarn-packages-{{ checksum "yarn.lock" }}
-
+  save-deps-cache: &save-deps-cache
+    save_cache:
+      key: yarn-packages-{{ checksum "yarn.lock" }}
+      paths:
+        - ~/.cache/yarn
+        - node_modules
 jobs:
   install:
     <<: *container-config-node8
@@ -19,25 +24,25 @@ jobs:
       - run:
           name: Install Dependencies
           command: make install
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-            - node_modules
+      - *save-deps-cache
   test:
     <<: *container-config-node8
     steps:
       - checkout
       - *restore-deps-cache
-      - run: make install test-coverage
-      - run: cat coverage/lcov.info | npx coveralls
+      - run:
+          name: Install Dependencies and Run Test Coverage
+          command: make install test-coverage
+      - *save-deps-cache
+      - run: npx coveralls < coverage/lcov.info
   release:
     <<: *container-config-node8
     steps:
       - checkout
       - *restore-deps-cache
-      - run: make install build release
+      - run:
+          name: Build Package and Semantic-Release
+          command: make install build release
       - run:
           name: Update Doc GitHub Page
           command: |
@@ -45,12 +50,13 @@ jobs:
             git config --global user.email 'circleci@users.noreply.github.com' &&\
             npx jsdoc2md src/** -g none > API.md &&\
             npx gitbook build &&\
-            npx gh-pages -d _book -m '[skip ci] Automated Github Page Update'
+            npx gh-pages -d _book -m 'Automated Github Page Update'
 
 workflows:
   version: 2
   test-and-release:
     jobs:
+      - install
       - test:
           filters:
             branches:
