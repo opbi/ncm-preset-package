@@ -20,6 +20,8 @@
   <a href="https://snyk.io/test/github/opbi/ncm-preset-package">
     <img alt="Known Vulnerabilities" src="https://snyk.io/test/github/opbi/ncm-preset-package/badge.svg">
   </a>
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package?ref=badge_shield" alt="FOSSA Status">     <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package.svg?type=shield"/>
+  </a>
   <a href="https://david-dm.org/opbi/ncm-preset-package">
     <img alt="Dependencies" src="https://img.shields.io/david/opbi/ncm-preset-package.svg">
   </a>
@@ -28,11 +30,6 @@
   </a>
   <a href="https://scrutinizer-ci.com/g/opbi/ncm-preset-package/?branch=master">
     <img alt="Scrutinizer Code Quality" src="https://img.shields.io/scrutinizer/g/opbi/ncm-preset-package.svg">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package?ref=badge_shield" alt="FOSSA Status">     <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package.svg?type=shield"/>
   </a>
 </p>
 
