@@ -8,6 +8,7 @@
   <a href="https://circleci.com/gh/opbi/workflows/ncm-preset-package">
     <img alt="CI" src="https://img.shields.io/circleci/project/github/opbi/ncm-preset-package/master.svg">
   </a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package.svg?type=shield"/></a>
   <a href="https://coveralls.io/github/opbi/ncm-preset-package?branch=master">
     <img alt="Coveralls" src="https://img.shields.io/coveralls/github/opbi/ncm-preset-package/master.svg">
   </a>
@@ -57,3 +58,6 @@ Any idea and optimisation should go into this repo, getting tested and reviewed,
 
 ### License
 [MIT](License)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package?ref=badge_large)
