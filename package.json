@@ -10,10 +10,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.1.6",
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
     "@babel/preset-flow": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
@@ -26,7 +26,7 @@
     "gitbook-plugin-github": "^2.0.0",
     "gitbook-plugin-prism": "^2.4.0",
     "jest": "^23.6.0",
-    "semantic-release": "^15.12.0"
+    "semantic-release": "^15.12.4"
   },
   "optionalDependencies": {
     "@commitlint/cli": "^7.2.1",
@@ -40,13 +40,13 @@
     "eslint-import-resolver-node": "^0.3.2",
     "eslint-plugin-flowtype": "^3.2.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.0.0",
+    "eslint-plugin-jest": "^22.1.2",
     "eslint-plugin-jsdoc": "^3.9.1",
     "eslint-plugin-prettier": "^3.0.0",
-    "eslint_d": "^7.1.0",
+    "eslint_d": "^7.2.0",
     "flow-bin": "^0.87.0",
-    "husky": "^1.1.4",
-    "prettier": "^1.15.2"
+    "husky": "^1.2.0",
+    "prettier": "^1.15.3"
   },
   "engines": {
     "node": ">=8.10"
