@@ -50,7 +50,7 @@ Any idea and optimisation should go into this repo, getting tested and reviewed,
 - Initialisation: @opbi/ncm
 - Development: yarn, babel, eslint, prettier, flow-typed, jsdoc, jest
 - Commit: husky, commitlint
-- Build & Publish: semantic-release, CircleCI, Coveralls, Scrutiniser, Snyk, David, InchCI, Renovate
+- Build & Publish: semantic-release, CircleCI, Coveralls, Scrutiniser, Snyk, Fossa, David, InchCI, Renovate
 - Guide & Docs: documentation.js, gitbook, gh-pages, .md
 - Deprecation: (@opbi/ncm)
 
