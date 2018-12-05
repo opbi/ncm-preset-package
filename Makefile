@@ -12,12 +12,12 @@ cleanup:
 	@rm -rf dist coverage _book flow-typed node_modules  *.log
 
 build:
-	@echo 'Building…'
+	@echo 'building…'
 	@rm -rf dist
 	@babel src -d dist --ignore '**/__tests__/*.js'
 
 flowtype:
-	@echo 'flowtype check...'
+	@echo 'flowtype-check…'
 	@flow check
 
 lint:
