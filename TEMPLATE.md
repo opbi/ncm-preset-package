@@ -20,6 +20,9 @@
   <a href="https://snyk.io/test/github/{{ownerGithub}}/{{componentName}}">
     <img alt="Known Vulnerabilities" src="https://snyk.io/test/github/{{ownerGithub}}/{{componentName}}/badge.svg">
   </a>
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2F{{ownerGithub}}%2F{{componentName}}?ref=badge_shield">
+    <img alt="License Scan" src="https://app.fossa.io/api/projects/git%2Bgithub.com%2F{{ownerGithub}}%2F{{componentName}}.svg?type=shield"/>
+  </a>
   <a href="https://david-dm.org/{{ownerGithub}}/{{componentName}}">
     <img alt="Dependencies" src="https://img.shields.io/david/{{ownerGithub}}/{{componentName}}.svg">
   </a>
