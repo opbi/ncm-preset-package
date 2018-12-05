@@ -11,6 +11,8 @@
   <a href="https://coveralls.io/github/opbi/ncm-preset-package?branch=master">
     <img alt="Coveralls" src="https://img.shields.io/coveralls/github/opbi/ncm-preset-package/master.svg">
   </a>
+  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package?ref=badge_shield" alt="FOSSA Status">     <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package.svg?type=shield"/>
+  </a>
   <a href="https://github.com/semantic-release/semantic-release">
     <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
   </a>
@@ -25,8 +27,6 @@
   </a>
   <a href="https://david-dm.org/opbi/ncm-preset-package?type=dev">
     <img alt="devDependencies" src="https://img.shields.io/david/dev/opbi/ncm-preset-package.svg">
-  </a>
-  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package?ref=badge_shield" alt="FOSSA Status">     <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package.svg?type=shield"/>
   </a>
   <a href="https://scrutinizer-ci.com/g/opbi/ncm-preset-package/?branch=master">
     <img alt="Scrutinizer Code Quality" src="https://img.shields.io/scrutinizer/g/opbi/ncm-preset-package.svg">
