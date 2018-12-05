@@ -1,6 +1,0 @@
----
-files:
-  included:
-    - src/**/*.js
-  excluded:
-    - src/__tests__/**/*.js
