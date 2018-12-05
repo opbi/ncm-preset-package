@@ -46,7 +46,6 @@ jobs:
       - run:
           name: Update Doc GitHub Page
           command: sh .circleci/update-github-page.sh
-      # TODO: check if necessary to cache gitbook install
 
 workflows:
   version: 2
