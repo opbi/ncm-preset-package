@@ -1,6 +1,6 @@
 ## CONFIG
+SHELL := /bin/bash -v
 export PATH := ./node_modules/.bin:$(PATH)
-SHELL := /bin/bash
 
 ## VARIABLES
 
