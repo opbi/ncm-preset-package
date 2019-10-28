@@ -28,6 +28,9 @@ lint-fix:
 	@echo 'lint-fixing…'
 	@eslint_d src --fix
 
+lint-reset:
+	@eslint_d restart
+
 test:
 	@jest
 

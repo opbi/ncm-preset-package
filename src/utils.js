@@ -1,7 +1,7 @@
 // @flow
 
 /**
- * Join to string with a space.
+ * Join two strings with a space.
  */
 export const join = (a: string, b: string): string => `${a} ${b}`;
 
