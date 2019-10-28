@@ -47,7 +47,7 @@
     "semantic-release": "^15.13.28"
   },
   "engines": {
-    "node": ">=carbon"
+    "node": ">=8.16"
   },
   "main": "dist/index.js"
 }
