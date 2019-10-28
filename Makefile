@@ -1,6 +1,6 @@
 ## CONFIG
-SHELL := /bin/bash -v
 export PATH := ./node_modules/.bin:$(PATH)
+SHELL := /bin/bash -v
 
 ## VARIABLES
 
@@ -12,20 +12,19 @@ cleanup:
 	@rm -rf dist coverage _book flow-typed node_modules  *.log
 
 build:
-	@echo 'building…'
 	@rm -rf dist
 	@babel src -d dist --ignore '**/__tests__/*.js'
 
+build-watch:
+	@babel src -d dist --ignore '**/__tests__/*.js' --watch
+
 flowtype:
-	@echo 'flowtype-check…'
 	@flow check
 
 lint:
-	@echo 'linting…'
 	@eslint_d src
 
 lint-fix:
-	@echo 'lint-fixing…'
 	@eslint_d src --fix
 
 lint-reset:
