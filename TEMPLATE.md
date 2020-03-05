@@ -11,6 +11,9 @@
   <a href="https://coveralls.io/github/{{ownerGithub}}/{{componentName}}?branch=master">
     <img alt="Coveralls" src="https://img.shields.io/coveralls/github/{{ownerGithub}}/{{componentName}}/master.svg">
   </a>
+  <a href="https://inch-ci.org/github/{{ownerGithub}}/{{componentName}}">
+    <img alt="inch-ci" src="http://inch-ci.org/github/{{ownerGithub}}/{{componentName}}.svg?branch=master&style=shields">
+  </a>
   <a href="https://github.com/semantic-release/semantic-release">
     <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
   </a>
