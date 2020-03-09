@@ -9,7 +9,7 @@ install:
 	@yarn
 
 cleanup:
-	@rm -rf dist coverage _book flow-typed node_modules  *.log API.md
+	@rm -rf node_modules coverage .build dist _book docs  *.log API.md
 
 build:
 	@rm -rf dist
@@ -17,9 +17,6 @@ build:
 
 build-watch:
 	@babel src -d dist --ignore '**/__tests__/*.js' --watch
-
-flowtype:
-	@flow check
 
 typecheck:
 	@tsc

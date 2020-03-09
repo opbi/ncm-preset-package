@@ -14,11 +14,11 @@
     "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
     "@babel/preset-env": "^7.8.7",
-    "@babel/preset-flow": "^7.8.3",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/prompt-cli": "^8.3.5",
     "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.23.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^25.1.0",
@@ -31,13 +31,11 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-config-standard-jsdoc": "^9.3.0",
     "eslint-import-resolver-node": "^0.3.3",
-    "eslint-plugin-flowtype": "^4.6.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^23.8.1",
     "eslint-plugin-jsdoc": "^22.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint_d": "^8.1.0",
-    "flow-bin": "^0.120.0",
     "gh-pages": "^2.2.0",
     "gitbook-cli": "^2.3.2",
     "gitbook-plugin-edit-link": "^2.0.2",
@@ -51,6 +49,5 @@
   "engines": {
     "node": ">=8.16"
   },
-  "main": "dist/index.js",
-  "optionalDependencies": {}
+  "main": "dist/index.js"
 }
