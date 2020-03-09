@@ -21,6 +21,9 @@ build-watch:
 flowtype:
 	@flow check
 
+typecheck:
+	@tsc
+
 lint:
 	@eslint_d src
 

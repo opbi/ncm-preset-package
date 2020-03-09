@@ -1,4 +1,4 @@
-import example from 'index';
+import example from 'index.ts';
 
 import * as constants from 'constants';
 
@@ -10,7 +10,7 @@ describe('example', () => {
     expect(result).toBe('hello world');
   });
 
-  it('would fail if constants corrupt', () => {
+  it('would fail if constant types corrupt', () => {
     constants.FOO = 1;
     constants.BAR = 'foo';
     expect(example).toThrowErrorMatchingSnapshot();

@@ -7,6 +7,11 @@ reports/
 
 # dist
 dist/
+types/
+
+# docs output
+docs/
+API.md
 
 # build cache
 .cache
@@ -14,7 +19,6 @@ dist/
 .webpack
 .build
 *_book
-API.md
 
 # dot files
 .DS_Store
