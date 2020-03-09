@@ -9,7 +9,7 @@ install:
 	@yarn
 
 cleanup:
-	@rm -rf dist coverage _book flow-typed node_modules  *.log
+	@rm -rf dist coverage _book flow-typed node_modules  *.log API.md
 
 build:
 	@rm -rf dist
@@ -38,6 +38,12 @@ test-watch:
 
 test-coverage:
 	@jest --coverage
+
+docs:
+	@documentation build src/** -f md --markdown-toc false > API.md
+
+docs-watch:
+	@documentation serve --shallow --watch src/**
 
 book:
 	@rm -rf _book
