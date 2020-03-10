@@ -9,7 +9,7 @@ install:
 	@yarn
 
 cleanup:
-	@rm -rf node_modules coverage dist types docs  *.log API.md
+	@rm -rf node_modules coverage dist types docs  *.log
 
 build:
 	@rm -rf dist
