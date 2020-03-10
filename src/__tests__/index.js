@@ -1,4 +1,4 @@
-import example from 'index.ts';
+import example from 'index';
 
 import * as constants from 'constants';
 

@@ -9,7 +9,7 @@ install:
 	@yarn
 
 cleanup:
-	@rm -rf node_modules coverage .build dist _book docs  *.log API.md
+	@rm -rf node_modules coverage dist types docs  *.log API.md
 
 build:
 	@rm -rf dist
@@ -18,8 +18,8 @@ build:
 build-watch:
 	@babel src -d dist --ignore '**/__tests__/*.js' --watch
 
-typecheck:
-	@tsc
+type-check:
+	@tsc --noEmit
 
 lint:
 	@eslint_d src
@@ -40,14 +40,10 @@ test-coverage:
 	@jest --coverage
 
 docs:
-	@documentation build src/** -f md --markdown-toc false > API.md
+	@documentation build src/** -f html -o docs
 
 docs-watch:
-	@documentation serve --shallow --watch src/**
-
-book:
-	@rm -rf _book
-	@gitbook serve
+	@documentation serve --watch src/**
 
 commit:
 	@commit

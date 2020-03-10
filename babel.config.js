@@ -8,6 +8,7 @@ module.exports = {
         },
       },
     ],
+    '@babel/typescript',
   ],
   plugins: [
     '@babel/plugin-proposal-object-rest-spread',

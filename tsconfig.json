@@ -3,10 +3,7 @@
     "target": "es6",
     "allowJs": true,
     "checkJs": true,
-    "sourceMap": true,
-    "esModuleInterop": true,
     "removeComments": false,
-    "emitDeclarationOnly": true,
     "declaration": true,
     "alwaysStrict": true,
     "strictNullChecks": false,
@@ -14,12 +11,15 @@
     "outDir": "types",
     "module": "commonjs"
   },
+  "include": [
+    "src/**/*"
+  ],
   "exclude": [
     "node_modules",
     "types",
     "dist",
     "coverage",
     "docs",
-    "**/__tests__"
+    "**/__tests__/**"
   ]
 }
