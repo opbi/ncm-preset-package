@@ -7,14 +7,9 @@
  *
  * @param {object} options - Config.
  * @param {Validator} options.validator - The validation method.
- * @param {boolean} [options.skip] - Whether to skip the check.
  * @returns {Function} - The decorated.
  */
-const inputValidation = ({
-  validator = () => false,
-  skip = false,
-}) => action => (...args) => {
-  if (skip) return action(...args);
+const inputValidation = ({ validator }) => action => (...args) => {
   if (validator(...args)) return action(...args);
   throw Error('function validation failed');
 };
