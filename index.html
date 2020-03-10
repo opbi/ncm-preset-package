@@ -1,296 +1,467 @@
-
-<!DOCTYPE HTML>
-<html lang="" >
-    <head>
-        <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Purpose · ncm-preset-package</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
-        
-        
-        
-    
-    <link rel="stylesheet" href="gitbook/style.css">
-
-    
-            
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>@opbi/ncm-preset-package  | Documentation</title>
+  <meta name='description' content='the config preset for [package] used by ncm'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>@opbi/ncm-preset-package</h3>
+          <div class='mb1'><code></code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-tomorrow.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-        
-
-    
-
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-        
-    
-    
-    <meta name="HandheldFriendly" content="true"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
-
-    
-    <link rel="next" href="API.html" />
-    
-    
-
-    </head>
-    <body>
-        
-<div class="book">
-    <div class="book-summary">
-        
-            
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
-            
-                <nav role="navigation">
-                
-
-
-<ul class="summary">
-    
-    
-
-    
-
-    
-        
-        
-    
-        <li class="chapter " data-level="1.1" data-path="./">
-            
-                <a href="./#purpose">
-            
-                    
-                    Purpose
-            
+                <li><a
+                  href='#inputvalidation'
+                  class="">
+                  inputValidation
+                  
                 </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="API.html">
-            
-                <a href="API.html">
-            
-                    
-                    API References
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-
-    <li class="divider"></li>
-
-    <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
-        </a>
-    </li>
-</ul>
-
-
-                </nav>
-            
-        
-    </div>
-
-    <div class="book-body">
-        
-            <div class="body-inner">
                 
-                    
-
-<div class="book-header" role="navigation">
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Purpose</a>
-    </h1>
-</div>
-
-
-
-
-                    <div class="page-wrapper" tabindex="-1" role="main">
-                        <div class="page-inner">
-                            
-<div id="book-search-results">
-    <div class="search-noresults">
-    
-                                <section class="normal markdown-section">
-                                
-                                <p></p><h3 align="center" id="ncm-preset-package">ncm-preset-package</h3><p></p>
-<p align="center" style="margin-bottom: 2em;">&#x1F4E6; [package] config standard and template used by @opbi/ncm</p>
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/@opbi/ncm-preset-package" target="_blank">
-    <img alt="npm" src="https://img.shields.io/npm/v/@opbi/ncm-preset-package.svg">
-  </a>
-  <a href="https://circleci.com/gh/opbi/workflows/ncm-preset-package" target="_blank">
-    <img alt="CI" src="https://img.shields.io/circleci/project/github/opbi/ncm-preset-package/master.svg">
-  </a>
-  <a href="https://coveralls.io/github/opbi/ncm-preset-package?branch=master" target="_blank">
-    <img alt="Coveralls" src="https://img.shields.io/coveralls/github/opbi/ncm-preset-package/master.svg">
-  </a>
-  <a href="https://inch-ci.org/github/opbi/ncm-preset-package" target="_blank">
-    <img alt="inch-ci" src="http://inch-ci.org/github/opbi/ncm-preset-package.svg?branch=master&amp;style=shields">
-  </a>
-  <a href="https://github.com/semantic-release/semantic-release" target="_blank">
-    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://snyk.io/test/github/opbi/ncm-preset-package" target="_blank">
-    <img alt="Known Vulnerabilities" src="https://snyk.io/test/github/opbi/ncm-preset-package/badge.svg">
-  </a>
-  <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package?ref=badge_shield" alt="FOSSA Status" target="_blank">     <img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopbi%2Fncm-preset-package.svg?type=shield">
-  </a>
-  <a href="https://david-dm.org/opbi/ncm-preset-package" target="_blank">
-    <img alt="Dependencies" src="https://img.shields.io/david/opbi/ncm-preset-package.svg">
-  </a>
-  <a href="https://david-dm.org/opbi/ncm-preset-package?type=dev" target="_blank">
-    <img alt="devDependencies" src="https://img.shields.io/david/dev/opbi/ncm-preset-package.svg">
-  </a>
-  <a href="https://scrutinizer-ci.com/g/opbi/ncm-preset-package/?branch=master" target="_blank">
-    <img alt="Scrutinizer Code Quality" src="https://img.shields.io/scrutinizer/g/opbi/ncm-preset-package.svg">
-  </a>
-</p>
-
-<hr>
-<h3 id="purpose">Purpose</h3>
-<h4 id="model-of-package">Model of Package</h4>
-<p>This serves as the flagship and standard of how a package component should be developed, tested, built, published, documentated and shared. It is the mother and ultimate source of truth of how different tools and services are configured to model the process and standard of shipping a package.</p>
-<h4 id="lord-of-tooling">Lord of Tooling</h4>
-<p>Any idea and optimisation should go into this repo, getting tested and reviewed, and populated to all packages through <a href="https://github.com/opbi/ncm" target="_blank">ncm</a>. It also serves as a single source of place to test any new development tool using its pipeline, and any niche programming edge case that may break the build configuration should be included in the src code here to be tested with any future tooling update. There should be no business logics here, and anything else that can be estabilished as a standard should be prooved here.</p>
-<h3 id="current-standard">Current Standard</h3>
-<ul>
-<li>Initialisation: @opbi/ncm</li>
-<li>Development: yarn, babel, eslint, prettier, flow-typed, jsdoc, jest</li>
-<li>Commit: husky, commitlint</li>
-<li>Build &amp; Publish: semantic-release, CircleCI, Coveralls, Scrutiniser, Snyk, Fossa, David, InchCI, Renovate</li>
-<li>Guide &amp; Docs: documentation.js, gitbook, gh-pages, .md</li>
-<li>Deprecation: (@opbi/ncm)</li>
-</ul>
-<h3 id="how-to-use">How to Use</h3>
-<h3 id="license">License</h3>
-<p><a href="License">MIT</a></p>
-
-                                
-                                </section>
-                            
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
+                </li>
+              
+                
+                <li><a
+                  href='#inputvalidation'
+                  class="">
+                  inputValidation
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#index'
+                  class="">
+                  index
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#join'
+                  class="">
+                  join
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#allstrings'
+                  class="">
+                  allStrings
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
         </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='inputvalidation'>
+      inputValidation
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>inputValidation</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.validator</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
         </div>
+      
     </div>
-</div>
+  
 
-                        </div>
-                    </div>
-                
-            </div>
+  
 
-            
-                
-                
-                <a href="API.html" class="navigation navigation-next navigation-unique" aria-label="Next page: API References">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
         
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='inputvalidation'>
+      inputValidation
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>A decorator configurable to validate the param type of a function.</p>
+
+    <div class='pre p1 fill-light mt0'>inputValidation</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    Config.
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.validator</span> <code class='quiet'>Validator</code>
+  </td>
+  <td class='break-word'><span>The validation method.
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
     </div>
+  
 
-    <script>
-        var gitbook = gitbook || [];
-        gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Purpose","level":"1.1","depth":1,"next":{"title":"API References","level":"1.2","depth":1,"path":"API.md","ref":"API.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/opbi/ncm-preset-package/tree/master"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ncm-preset-package","gitbook":"3.2.2"},"file":{"path":"README.md","mtime":"2020-03-05T17:32:46.829Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-03-05T17:33:36.818Z"},"basePath":".","book":{"language":""}});
-        });
-    </script>
-</div>
+  
 
-        
-    <script src="gitbook/gitbook.js"></script>
-    <script src="gitbook/theme.js"></script>
+  
     
-        
-        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></code>:
+        The decorated.
 
-    </body>
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='index'>
+      index
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>An example function just to show the build and ci pipeline works.</p>
+
+    <div class='pre p1 fill-light mt0'>index(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        Hello world.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='join'>
+      join
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Join two strings with a space.</p>
+
+    <div class='pre p1 fill-light mt0'>join</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>a</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The first param.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>b</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The second param.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        The result.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='allstrings'>
+      allStrings
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>An example function to show JSDoc works with object destruction in function params.</p>
+
+    <div class='pre p1 fill-light mt0'>allStrings</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>args</span> <code class='quiet'>(...any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
 </html>
-
