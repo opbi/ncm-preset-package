@@ -13,7 +13,7 @@ export const join = (a, b) => `${a} ${b}`;
  * @typedef {import('./decorator')} Validator
  */
 export const allStrings = (...args) => {
-  const argTypes = args.map(arg => typeof arg);
-  if (argTypes.some(type => type !== 'string')) return false;
+  const argTypes = args.map((arg) => typeof arg);
+  if (argTypes.some((type) => type !== 'string')) return false;
   return true;
 };

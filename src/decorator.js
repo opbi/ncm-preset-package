@@ -9,7 +9,7 @@
  * @param {Validator} options.validator - The validation method.
  * @returns {Function} - The decorated.
  */
-const inputValidation = ({ validator }) => action => (...args) => {
+const inputValidation = ({ validator }) => (action) => (...args) => {
   if (validator(...args)) return action(...args);
   throw Error('function validation failed');
 };
