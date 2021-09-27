@@ -1,5 +1,5 @@
 /**
- * @typedef {(...args: any) => boolean} Validator
+ * @callback Validator {(...args: any) => boolean}
  */
 
 /**
@@ -9,9 +9,12 @@
  * @param {Validator} options.validator - The validation method.
  * @returns {Function} - The decorated.
  */
-const inputValidation = ({ validator }) => (action) => (...args) => {
-  if (validator(...args)) return action(...args);
-  throw Error('function validation failed');
-};
+const inputValidation =
+  ({ validator }) =>
+  (action) =>
+  (...args) => {
+    if (validator(...args)) return action(...args);
+    throw Error('function validation failed');
+  };
 
 export default inputValidation;
