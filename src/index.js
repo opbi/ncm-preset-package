@@ -1,5 +1,4 @@
 import inputValidation from './decorator';
-import { FOO, BAR } from './constants';
 import { allStrings, join } from './utils';
 
 /**
@@ -7,7 +6,7 @@ import { allStrings, join } from './utils';
  *
  * @returns {string} Hello world.
  */
-export default () =>
+export default (...args) =>
   inputValidation({
     validator: allStrings,
-  })(join)(FOO, BAR);
+  })(join)(...args);
