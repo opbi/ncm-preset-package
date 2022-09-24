@@ -3,11 +3,11 @@
  */
 
 /**
- * A decorator configurable to validate the param type of a function.
+ * A decorator configurable to validate the param type of a function
  *
- * @param {object} options - Config.
- * @param {Validator} options.validator - The validation method.
- * @returns {Function} - The decorated.
+ * @param {object} config - config options
+ * @param {Validator} config.validator - The validation method
+ * @returns {Function} - The decorated
  */
 const inputValidation =
   ({ validator }) =>
